@@ -8,6 +8,7 @@ void sol()
 
     cin >> num;
     temp = num;
+	// 간단한 수학 계산을 통해 코드를 구현함
     while(1)
     {
        
