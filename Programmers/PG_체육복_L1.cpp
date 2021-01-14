@@ -1,3 +1,4 @@
+// Greedy(탐욕법)을 사용한 알고리즘 구현
 #include <string>
 #include <iostream>
 #include <vector>
