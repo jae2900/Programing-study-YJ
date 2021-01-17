@@ -2,29 +2,30 @@
 #include <vector>
 #include <stack>
 using namespace std;
-
+// íš¨ìœ¨ì„± ë¬¸ì œë¡œ ìµœì†Œ ê³„ì‚°ì„ í•˜ê¸° ìœ„í•´ stackì„ ì‚¬ìš©í•œë‹¤
 vector<int> solution(vector<int> prices) {
 	int size = prices.size();
 	vector<int> answer(size);
 	stack<int> st;
 	for (int i = 0; i < size; i++) {
-		//½ºÅÃÀÌ ºñ¾îÀÖÁö¾Ê°í ½ºÅÃ¸¶Áö¸· °ªÀÌ ÇöÀç°ªº¸´Ù Å©´Ù¸é
-		//-> °¡°ÝÀÌ ¶³¾îÁ³´Ù¸é
+		//ìŠ¤íƒì´ ë¹„ì–´ìžˆì§€ì•Šê³  ìŠ¤íƒë§ˆì§€ë§‰ ê°’ì´ í˜„ìž¬ê°’ë³´ë‹¤ í¬ë‹¤ë©´
+		//-> ê°€ê²©ì´ ë–¨ì–´ì¡Œë‹¤ë©´
 		while (!st.empty() && prices[st.top()] > prices[i]) {
-			//°¡°ÝÀÌ ¶³¾îÁ³À¸¹Ç·Î i - ½ºÅÃ ¸¶Áö¸·°ª ´ëÀÔ
+			//ê°€ê²©ì´ ë–¨ì–´ì¡Œìœ¼ë¯€ë¡œ i - ìŠ¤íƒ ë§ˆì§€ë§‰ê°’ ëŒ€ìž…
+			
 			answer[st.top()] = i - st.top();
-			//°ªÁ¦°Å
+			//ê°’ì œê±°
 			st.pop();
-			//¹Ýº¹¹®ÀÎ ÀÌÀ¯: °¡°ÝÀÌ °°Àº°ªÀÌ À¯ÁöµÇ¾úÀ»°æ¿ì
-			//ÇöÀç°ªº¸´Ù °è¼ÓÀÛÀ¸¹Ç·Î 1°³Â÷ÀÌ¾¿ ³Ö¾îÁÖ±â À§ÇØ¼­´Ù.
+			//ë°˜ë³µë¬¸ì¸ ì´ìœ : ê°€ê²©ì´ ê°™ì€ê°’ì´ ìœ ì§€ë˜ì—ˆì„ê²½ìš°
+			//í˜„ìž¬ê°’ë³´ë‹¤ ê³„ì†ìž‘ìœ¼ë¯€ë¡œ 1ê°œì°¨ì´ì”© ë„£ì–´ì£¼ê¸° ìœ„í•´ì„œë‹¤.
 		}
-		//ÇöÀç ÀÎµ¦½º¸¦ ½ºÅÃ¿¡ ³Ö±â
+		//í˜„ìž¬ ì¸ë±ìŠ¤ë¥¼ ìŠ¤íƒì— ë„£ê¸°
 		st.push(i);
 	}
-	//½ºÅÃÀÌ ºô¶§±îÁö ¹Ýº¹
+	//ìŠ¤íƒì´ ë¹Œë•Œê¹Œì§€ ë°˜ë³µ
 	while (!st.empty()) {
-		//À§¿¡¼­ Æ¯Á¤À§Ä¡¿¡ ÀÌ¹Ì°ªÀ» ³Ö¾úÀ¸¹Ç·Î pushbackÀÌ³ª insert·ÎÇÏ¸é ¾ÈµÈ´Ù.
-		//µÚ¿¡¼­ºÎÅÍ ³Ö¾î¾ßÇÏ¹Ç·Î size-1 ¿¡¼­ top°ªÀ» »©ÁØ´Ù.
+		//ìœ„ì—ì„œ íŠ¹ì •ìœ„ì¹˜ì— ì´ë¯¸ê°’ì„ ë„£ì—ˆìœ¼ë¯€ë¡œ pushbackì´ë‚˜ insertë¡œí•˜ë©´ ì•ˆëœë‹¤.
+		//ë’¤ì—ì„œë¶€í„° ë„£ì–´ì•¼í•˜ë¯€ë¡œ size-1 ì—ì„œ topê°’ì„ ë¹¼ì¤€ë‹¤.
 		answer[st.top()] = size - st.top() - 1;
 		st.pop();
 	}
