@@ -17,7 +17,8 @@ vector<int> solution(vector<int> progresses, vector<int> speeds)
 		pro.push(progresses.at(i));
 		spd.push(speeds.at(i));
 	}
-
+	//일반 벡터를 사용하면 인덱스로 구현이가능하지만
+	// 큐를 사용할때 메모리나 속도가 빠를 수 있음
 
 	while (!pro.empty())
 	{
