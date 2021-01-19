@@ -4,7 +4,8 @@
 #include <iostream>
 #include <queue>
 
-
+// 해시 알고리즘을 이용하여 풀이
+// 백터 비교는 sorting을 잘 사용하면 편리하게 할 수 있음
 
 using namespace std;
 
