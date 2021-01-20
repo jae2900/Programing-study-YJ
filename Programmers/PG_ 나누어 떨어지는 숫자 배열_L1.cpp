@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-
+//숫자 연산으로 계산하여 코드 작성함
 vector<int> solution(vector<int> arr, int divisor) 
 {
     vector<int> answer;
