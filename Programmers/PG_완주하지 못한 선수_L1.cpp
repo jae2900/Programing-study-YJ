@@ -3,7 +3,7 @@
 #include <algorithm>
 
 using namespace std;
-
+// 소팅을 이용하면 같은 것을 찾는것을 간단히 할수 있다.
 string solution(vector<string> participant, vector<string> completion) 
 {
     string answer = "";
