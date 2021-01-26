@@ -5,6 +5,7 @@
 using namespace std;
 
 string solution(int n) {
+	// 문자열 덧셈을 이용한 코드
 	string answer = "";
 
 	for (int i = 0; i < n; i++)
