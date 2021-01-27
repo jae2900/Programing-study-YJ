@@ -5,7 +5,7 @@
 
 using namespace std;
 
-bool is_Prime(int a)
+bool is_Prime(int a)// 소수 계한할 경우 제곱근을 취하여 효율성문제를 해결한다
 {
     int n = sqrt(a);
     for(int i = 2; i <= n; i++)
