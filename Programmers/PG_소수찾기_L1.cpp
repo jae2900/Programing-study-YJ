@@ -7,7 +7,7 @@ using namespace std;
 bool check(int a)
 {
 
-	for (int j = 2; j < a; j++)
+	for (int j = 2; j < a/2+2; j++)
 	{
 		if (a%j == 0)
 		{
