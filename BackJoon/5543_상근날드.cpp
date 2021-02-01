@@ -3,7 +3,7 @@
 
 using namespace std;
 
-
+// 정렬 사용하여 간단하게 해결함
 
 
 int main()
