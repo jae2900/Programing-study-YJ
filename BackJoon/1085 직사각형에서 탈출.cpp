@@ -19,7 +19,7 @@ void sol()
 
 
 }
-
+// x y축 우선순위만을 생각함
 int main()
 {
     sol();
