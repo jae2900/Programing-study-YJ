@@ -2,6 +2,7 @@
 #include <vector>
 
 using namespace std;
+// 기본적인 것을 활용함
 
 int solution(int a, int b)
 {
