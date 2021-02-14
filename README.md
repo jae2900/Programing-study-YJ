@@ -2,5 +2,6 @@
 Jae2900
 ## BackJoon Solution
 * Level Bronze
+* Level Silver
 
 ## Programmers
