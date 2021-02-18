@@ -1,5 +1,7 @@
 # Programing-study-YJ
 Jae2900
+
+## Algorithm Study
 ## BackJoon Solution
 * Level Bronze
 * Level Silver
