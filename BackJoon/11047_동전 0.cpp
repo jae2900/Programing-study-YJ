@@ -1,6 +1,7 @@
 // 그리디 알고리즘 
 #include <iostream>
 #include <vector>
+// 효율성보다 우선순위를 우선으로 한다
 
 using namespace std;
 
