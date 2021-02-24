@@ -10,7 +10,7 @@ Lee YoungJae
 * 1259_펠린드롬 수  - B1
 
 
-### Level 1 - 2. Silver
+### 1 - 2. Level Silver
 
 ## 2. Programmers
 ### Level 1
