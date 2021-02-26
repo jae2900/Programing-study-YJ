@@ -1,5 +1,5 @@
 # Programing-study-YJ
-Jae2900
+Jae2900.
 
 Lee YoungJae
 
