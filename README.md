@@ -14,7 +14,7 @@ Lee YoungJae
 ### 1 - 2. Level Silver
 
 ### 1 - 3. Level Gold
-* 1038_감소하는 수 - 
+* 1038_감소하는 수 - G5
 
 ## 2. Programmers
 ### Level 1
