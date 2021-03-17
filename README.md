@@ -13,6 +13,9 @@ Lee YoungJae
 
 ### 1 - 2. Level Silver
 
+### 1 - 3. Level Gold
+* 1038_감소하는 수 - 
+
 ## 2. Programmers
 ### Level 1
 * 3진법 뒤집기   - L1
