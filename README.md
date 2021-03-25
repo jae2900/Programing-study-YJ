@@ -10,7 +10,7 @@ Lee YoungJae
 * 1259_펠린드롬 수  - B1
 * 1193_분수찾기     - B2
 * 1
-*
+* 1
 
 ### 1 - 2. Level Silver
 
