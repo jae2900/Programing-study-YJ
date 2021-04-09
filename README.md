@@ -1,6 +1,5 @@
 # Programing-study-YJ
 Jae2900
-
 Lee YoungJae
 
 ## Algorithm Study
